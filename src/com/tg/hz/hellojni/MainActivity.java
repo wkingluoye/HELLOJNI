@@ -14,7 +14,7 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		String str = JniClient.AddStr("test", "test");
+		String str = JniClient.AddStr("test", "testGit");
 		Toast.makeText(this, str, Toast.LENGTH_LONG).show();
 		int i = JniClient.AddInt(1,2);
 		Toast.makeText(this, i+"", Toast.LENGTH_LONG).show();
